@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPGrid</title>
+    <style>
+      #timetopcorner {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #game {
+        border: black solid 1px;
+        width: 400px;
+        height: 400px;
+      }
+
+      .cell {
+        stroke: white;
+        color: white;
+      }
+
+      .red {
+        fill: red;
+      }
+
+      .cell-selected {
+        fill: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="timetopcorner">
+      <p id="timeToRefresh">
+      </p>
+    </div>
+    <h1>RPG<small>rid</small></h1>
+    <div id="game">
+
+    </div>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="numbers.js"></script>
+    <!-- Auto Refresh
+    <script>
+    (function(){
+      var time = 30*1000;
+      var diff = 1000;
+      var timer = setInterval(function () {
+        if(time <= 0){
+          return window.location.reload(true);
+        }
+        document.getElementById('timeToRefresh').innerHTML = 'Time to Refresh - ' + time;
+        time -= diff;
+      }, diff);
+    })();
+    </script>
+  -->
+  </body>
+</html>
