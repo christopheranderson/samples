@@ -42,7 +42,6 @@
         curr.each(function(d) {
           if (0 > path.indexOf(d)) {
             var prev = path[path.length - 1];
-            console.log();
             // Detect if it's adjacent in position and value
             if ((((prev.val === (digits - 1) || prev.val ===
                     0) &&
@@ -78,7 +77,6 @@
         });
 
       // Process the path
-      console.log(path);
       if (path.length >= 3) {
         points += path.length * path.length;
 
@@ -114,7 +112,9 @@
             return d.val;
           });
       }
-      console.log('Points: ' + points);
+
+      document.getElementById('score')
+        .innerHTML = points;
     };
 
     return obj;
@@ -175,8 +175,4 @@
     .attr('font-size', ts + 'px')
     .attr('fill', 'white')
     .attr('text-anchor', 'middle');
-
-
-
-  console.log('numbers.js loaded');
 })(d3);
