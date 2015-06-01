@@ -174,5 +174,6 @@
     })
     .attr('font-size', ts + 'px')
     .attr('fill', 'white')
-    .attr('text-anchor', 'middle');
+    .attr('text-anchor', 'middle')
+    .attr('font-family', "'Shadows Into Light', cursive");
 })(d3);
